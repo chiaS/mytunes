@@ -1,9 +1,7 @@
 // SongQueue.js - Defines a backbone model class for the song queue.
 var SongQueue = Songs.extend({
-  model: SongModel,
-
-  initialize: function(){
-    this.on('change', this.enqueue, this);
+  initialize:function(){
+  
   },
 
   enqueue: function(data) {
@@ -21,6 +19,12 @@ var SongQueue = Songs.extend({
 
 
   },
-  ended: function(){}
+  ended: function(){
+
+  },
+
+  parse: function(response){
+    return response.results;
+  }
 
 });
