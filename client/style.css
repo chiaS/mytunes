@@ -1,0 +1,14 @@
+.song-wrapper{
+  margin-top:2em;
+}
+.playlist{
+display:inline-block;
+}
+.library{
+
+display:inline-block;
+}
+audio{
+  position:fixed;
+  left:0;
+}
