@@ -2,6 +2,7 @@
 <html>
   <head>
       <link rel='stylesheet' href='style.css'>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 
   </head>
   <body>
@@ -32,20 +33,23 @@
         var library = new Songs(songData);
         var app = new AppModel({library: library});
 
-     //    var songQueue = new SongQueue();
-     //    var song = new SongModel(songData[0]);
-     // //   songQueue.enqueue(song);
-        //songQueue.play(song);
-
-        // build a view for the top level of the whole app
         var appView = new AppView({model: app});
+        // var playListView = new SongQueueView({collection: app.get('songQueue')});
+        // build a view for the top level of the whole app
 
         // put the view onto the screen
         $('.library').append(appView.render());
-
+        //$('.playlist').append(playListView.render());
+ 
       });
     </script>
+    <div class="page-header">
+      <h1>Music Box</h1>
+    </div>
+
+
     <div class='song-wrapper'>
+
         <div class='library'></div>
         <div class='playlist'></div>
     </div>

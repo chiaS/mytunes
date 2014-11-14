@@ -1,14 +1,20 @@
+html, body{
+  height: 100%;
+}
 .song-wrapper{
   margin-top:2em;
 }
 .playlist{
-display:inline-block;
+  
 }
 .library{
 
-display:inline-block;
 }
 audio{
   position:fixed;
-  left:0;
+  bottom:0;
 }
+button, .title{
+  cursor: pointer;
+}
+

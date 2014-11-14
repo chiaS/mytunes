@@ -4,11 +4,13 @@ var songData = [
     url: "https://s3-us-west-1.amazonaws.com/hr-mytunes/data/04+One+In+A+Million.mp3",
     title: "One In A Million",
     artist: "Aaliyah",
+    art: "http://images2.fanpop.com/images/photos/7400000/CD-COVERS-paramore-fanaticz-7436939-304-304.jpg"
   },
   {
     url: "https://s3-us-west-1.amazonaws.com/hr-mytunes/data/03+Age+Ain%27t+Nothing+But+A+Number.mp3",
     title: "Age Ain't Nothing But A Number",
     artist: "Aaliyah",
+    art:"http://www.smashingmagazine.com/images/music-cd-covers/64.jpg"
   },
   {
     url: "https://s3-us-west-1.amazonaws.com/hr-mytunes/data/05+Hot+Like+Fire.mp3",
