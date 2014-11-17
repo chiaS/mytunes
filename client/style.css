@@ -1,20 +1,35 @@
 html, body{
   height: 100%;
+  padding: 2em;
 }
 .song-wrapper{
   margin-top:2em;
+  display: inline-flex;
 }
 .playlist{
-  
+  margin: 0 1.2em;
+  margin-top: 40px;
+  min-width: 300px;
 }
 .library{
-
+  width: 70%;
 }
 audio{
-  position:fixed;
-  bottom:0;
+  position: absolute;
+  margin: 0 1.2em;
 }
-button, .title{
+button, .title, tr{
   cursor: pointer;
 }
+.thumbnail > img{
+  height: 240px;
+}
 
+.album-view{
+  margin: 0 .5em 2em;
+  height: 240px;
+  min-width: 175px;
+}
+.table{
+  margin-top: 20px;
+}

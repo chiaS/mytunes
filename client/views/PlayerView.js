@@ -8,6 +8,10 @@ var PlayerView = Backbone.View.extend({
   events:{
     'ended': 'ended'
   },
+  
+  initialize: function(){
+    this.render();
+  },
 
   ended: function () {
     console.log('ended PlayerView');

@@ -1,9 +1,11 @@
 // AppView.js - Defines a backbone view class for the whole music app.
 var AppView = Backbone.View.extend({
+  className:'container-fluid',
 
   initialize: function(params){
     this.playerView = new PlayerView({model: this.model.get('currentSong')});
-   
+    $('.player').append(this.playerView.el);
+ 
     this.libraryView = new LibraryView({collection: this.model.get('library')});
 
     this.playListView = new SongQueueView({collection: this.model.get('songQueue')});
@@ -20,8 +22,8 @@ var AppView = Backbone.View.extend({
 
   render: function(){
     return this.$el.html([
-      this.libraryView.$el,
-      this.playerView.$el,
+      this.libraryView.$el
+   //   this.playerView.$el,
     ]);
   }
 

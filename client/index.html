@@ -32,26 +32,23 @@
         // set up model objects
         var library = new Songs(songData);
         var app = new AppModel({library: library});
-
         var appView = new AppView({model: app});
-        // var playListView = new SongQueueView({collection: app.get('songQueue')});
-        // build a view for the top level of the whole app
-
-        // put the view onto the screen
         $('.library').append(appView.render());
-        //$('.playlist').append(playListView.render());
- 
+        
       });
     </script>
     <div class="page-header">
       <h1>Music Box</h1>
     </div>
-
-
     <div class='song-wrapper'>
-
         <div class='library'></div>
-        <div class='playlist'></div>
+        <div class='player'></div>
+        <div class='playlist'>
+          <ul class="nav nav-tabs">
+           <li role="presentation" class="active"><a href='#'>My playlist</a></li>
+           <li role="presentation"><a href='#'>New playlist</a></li>
+          </ul>
+        </div>
     </div>
   </body>
 </html>
